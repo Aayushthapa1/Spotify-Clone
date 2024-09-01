@@ -1,5 +1,5 @@
 import React,{useRef,useEffect} from 'react'
-import DisplayHome from './DisplayHOme'
+import DisplayHome from './DisplayHome'
 import { Routes , Route} from 'react-router-dom'
 import DisplayAlbum from './DisplayAlbum'
 import { useLocation } from 'react-router-dom';
@@ -17,10 +17,10 @@ const Display = () => {
 
      useEffect(() => {
         if (isAlbum) {
-            displayRef.current.style.background = 'linear-gradient(${bgColor}),#121212)'
+            displayRef.current.style.background = `linear-gradient(${bgColor},#121212)`
         }
         else {
-            displayRef.current.style.background = '#121212'
+            displayRef.current.style.background = `#121212`
         }
      })
 
